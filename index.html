@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monara Bakery Website (Alexander's Project)</title>
+    <link rel="stylesheet" href="styles.css" text="text/css" />
+    <link rel="stylesheet" href="flickity.css" media="screen" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- flickity link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Enter 'npm run dev' to recompile TailwindCSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="background-image: url('images/Element.jpg')"
+    class="bg-cover bg-no-repeat"
+  >
+    <main>
+      <section id="section-one" class="max-w-[100%]">
+        <div id="section-one-container" class="flex flex-col">
+          <div
+            id="header"
+            class="flex justify-between items-center bg-[#ECD2AD] md:bg-inherit p-4 md:p-0 md:justify-around max-w-[100vw]"
+          >
+            <div id="header-left">
+              <img
+                src="images/monara-logo-vector.png"
+                alt="Monara Bakery Logo"
+                class="md:hidden"
+              />
+              <img
+                src="images/monara-logo-md.png"
+                alt="Monara Bakery Logo"
+                class="hidden md:block w-6/12"
+              />
+            </div>
+            <!-- hidden at mobile view -->
+            <div id="header-middle" class="hidden md:block w-2/4">
+              <nav id="header-menu" class="flex justify-between g-14 flex-auto">
+                <a href="" class="hover:underline">Homes</a>
+                <a href="" class="hover:underline">Popular Menu</a>
+                <a href="" class="hover:underline">About Us</a>
+                <a href="" class="hover:underline">Testimonies</a>
+              </nav>
+            </div>
+            <div id="header-right">
+              <button class="md:hidden">
+                <img
+                  src="images/side-bar-button.png"
+                  alt="Side Bar Button"
+                  id="header-menu-button"
+                />
+              </button>
+
+              <button
+                class="hidden md:block py-3 px-7 bg-[#12303D] rounded-3xl text-[#F7DEC9]"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+          <div
+            id="hero-1"
+            class="flex flex-col md:flex-row-reverse md:justify-between gap-4 justify-evenly p-2 ml-2 mx-12"
+          >
+            <div id="hero-image-container" class="w-[60%]">
+              <img
+                src="images/gourmet-chocolate-cupcake-left.png"
+                class="md:max-w-[40vw] md:hidden inline-flex alt="
+              />
+              <img
+                src="images/gourmet-chocolate-cupcake-right.png"
+                class="md:max-w-[40vw] hidden md:inline-flex alt="
+              />
+            </div>
+            <div
+              id="hero-text"
+              class="flex flex-col gap-4 w-[100%] md:justify-center"
+            >
+              <p class="font-arvo text-3xl max-w-[80%] md:max-w-[60%]">
+                SPECIAL BREAD FRESH TASTY
+              </p>
+              <p class="max-w-[80%] md:max-w-[60%] text-sm">
+                Specially made for you with a secret recipe and love, which
+                makes every bite so delicious .
+              </p>
+              <div
+                class="flex items-center justify-start w-[100%] max-w-[100%] bg-contain"
+              >
+                <div
+                  class="flex border-2 rounded-3xl border-[#B98D38] bg-white"
+                >
+                  <input
+                    type="text"
+                    class="px-4 py-2 w-[100%] rounded-3xl"
+                    placeholder="Search..."
+                  />
+                  <div class="rounded-full bg-[#B98D38] px-3 py-2 m-1">→</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-two" class="pt-4 pb-8">
+        <div
+          class="flex flex-col items-center md:flex-row justify-between mx-4 my-4 text-center"
+        >
+          <p class="font-arvo text-2xl max-w-[60%] md:max-w-[40%]">
+            AVAILABLE NOW DELICIOUS MADE BREAD HERE
+          </p>
+          <p class="max-w-[60%] md:max-w-[30%] text-sm">
+            Food menu choices in our shop get the best rating as the best food
+          </p>
+        </div>
+        <!-- column-reverse? -->
+        <div
+          class="carousel-1 carousel max-w-[100%] mt-8"
+          data-flickity='{ "groupCells": true }'
+        >
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/chocolate-donuts.jpeg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Donuts</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/croissant.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Croissant</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/macarons.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Macarons</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/cinnamoroll.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Cinnamon Roll</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/monara-apple-pie.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Monara Apple Pie</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/wheat-bread.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Wheat Bread</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/monara-pizza.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Monara Pesto Pizza</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/monara-fruit-cake.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Monara Fruit Cake</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            style="background-image: url('images/bagel.jpg')"
+            ;
+          >
+            <div class="flex flex-col container mt-36 ml-4">
+              <p class="font-arvo text-white text-2xl">Bagel</p>
+              <a href="" class="font-arvo text-white text-md">Order now →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-three" class="">
+        <div
+          class="flex flex-col md:flex-row justify-around max-w-[100%] p-0 mt-8 ml-4 mr-4"
+        >
+          <div class="flex justify-start md:justify-center">
+            <img
+              src="images/preparation.png"
+              class="max-w-[100%] mb-4 md:mb-0 md:max-w-[85%]"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col items-center md:text-start text-center gap-8 max-w-[100%] md:max-w-[50%]"
+          >
+            <p class="font-arvo text-2xl max-w-[60%]">
+              HANDMADE CAKES FOR YOUR EVERY TASTE
+            </p>
+            <p
+              class="max-w-[40%] md:max-w-[60%] min-w-[40vw] md:min-w-0 text-sm"
+            >
+              “Literature is a cake with many toys baked inside and even if you
+              find them all, if you don’t enjoy the path that leads you to them,
+              it will be a hollow accomplishment” -Cam’ron
+            </p>
+            <div
+              class="flex items-center justify-center w-[100%] max-w-[100%] bg-contain"
+            >
+              <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
+                <input
+                  type="text"
+                  class="px-4 py-2 w-[100%] rounded-3xl"
+                  placeholder="Search..."
+                />
+                <div class="rounded-full bg-[#B98D38] px-3 py-2 m-1">→</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-four" class="max-w-[100vw] flex">
+        <span
+          class="items-start relative justify-end align-center max-w-[30vw] left-0 z-10 top-0"
+        >
+          <p class="font-arvo text-2xl max-w-[80%]">POPULAR MENU</p>
+          <p class="max-w-[60%] md:max-w-[20%] text-sm">
+            List of meals at the restaurant and also the price
+          </p>
+        </span>
+
+        <!-- position: absolute; overflow: hidden; right: 0; width: 300px; -->
+        <span
+          class="md:!w-[70%]"
+          data-flickity='{ "groupCells": true }'
+          style="width: 100%; position: absolute; right: 0; overflow: hidden"
+        >
+          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+        </span>
+      </section>
+      <section id="section-five" class="">
+        <div
+          class="flex flex-col md:flex-row md:justify-evenly md:items-center mt-12"
+        >
+          <div class="flex flex-col flex-wrap gap-8 items-center md:w-[30vw]">
+            <div class="flex items-center ml-5">
+              <p
+                class="text-2xl font-arvo max-w-[70%] text-center md:text-start md:items-start ml-8 mt-8"
+              >
+                WE SERVE ONLINE ORDERS
+              </p>
+            </div>
+
+            <p class="text-sm text-center md:text-start max-w-[70%] mb-8">
+              Order food online namely the process of ordering food through the
+              website or the eating application itself. Customers can choose the
+              food ordered or taken.
+            </p>
+          </div>
+          <div
+            id="monara-image-container"
+            class="flex justify-center mt-4 md:w-[30vw] md:max-w-[30vw]"
+          >
+            <!-- border-radius -->
+            <img
+              src="images/baker-delivery.png"
+              class="max-w-[60vw] md:max-w-[25vw] mb-5"
+              alt=""
+            />
+            <!-- 25% -->
+            <div class=""></div>
+          </div>
+
+          <div
+            id="contact-info-container"
+            class="flex flex-col items-center text-center gap-8 md:w-[30vw]"
+          >
+            <div class="flex flex-col md:flex-row border-b border-black">
+              <div
+                class="flex flex-col md:flex-row justify-center gap-2 md:gap-4"
+              >
+                <img
+                  src="images/location.svg"
+                  class="max-w-[5vw] self-center md:self-start mr-4"
+                  alt=""
+                />
+                <div
+                  class="text-start flex flex-col justify-center items-center md:items-start"
+                >
+                  <p class="font-bold text-sm">The Royal Moon</p>
+                  <p class="text-sm">Miracel Moon, Prancis</p>
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row border-b border-black">
+              <div
+                class="flex flex-col md:flex-row justify-center gap-2 md:gap-4"
+              >
+                <img
+                  src="images/phone.svg"
+                  class="max-w-[5vw] self-center md:self-start mr-4"
+                  alt=""
+                />
+                <div
+                  class="text-start flex flex-col justify-center items-center md:items-start md:mr-8"
+                >
+                  <p class="font-bold text-sm">0801-9376-003</p>
+                  <p class="text-sm">Contact Us</p>
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row border-b border-black">
+              <div
+                class="flex flex-col md:flex-row justify-center gap-2 md:gap-4"
+              >
+                <img
+                  src="images/opening-hour.svg"
+                  class="max-w-[5vw] self-center md:self-start mr-4"
+                  alt=""
+                />
+                <div
+                  class="text-start flex flex-col justify-center items-center md:items-start"
+                >
+                  <p class="font-bold text-sm">Open 08:00-21:0PM</p>
+                  <p class="text-sm">Restaurant Open Daily</p>
+                  <hr />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-six" class="my-8">
+        <div
+          class="carousel-1 carousel max-w-[100%] pb-8"
+          data-flickity='{ "groupCells": true }'
+          style="
+            .flickity-viewport {
+              height: 60vh !important;
+            }
+          "
+        >
+          <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
+            <span class="flex justify-center items-center max-w-[100%]">
+              <img
+                src="images/larissa.jpg"
+                alt=""
+                class="max-w-[100%] max-h-[50vh] pl-2 sm:pl-12 md:pl-24"
+              />
+            </span>
+
+            <div
+              class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-12 md:ml-24"
+            >
+              <span class="">
+                <img src="images/Ic-mobile.png" alt="" class=""
+              /></span>
+
+              <p class="text-black">
+                "I cannot say enough good things about Monara Bakery. From their
+                warm and welcoming atmosphere to their delectable treats, it's a
+                slice of heaven on Earth. Their cinnamon rolls are like little
+                pillows of joy, and their custom cakes are masterpieces. The
+                staff is incredibly friendly and attentive, making every visit a
+                delightful experience. Monara Bakery has become my go-to spot
+                for all things sweet!"
+              </p>
+              <span class="">
+                <p class="font-bold">Larissa Venya</p>
+                <p class="">Interior Designer</p>
+              </span>
+            </div>
+          </div>
+          <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
+            <span class="flex justify-center items-center max-w-[100%]">
+              <img
+                src="images/michael.jpg"
+                alt=""
+                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+              />
+            </span>
+
+            <div
+              class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
+            >
+              <span class="">
+                <img src="images/Ic-mobile.png" alt="" class=""
+              /></span>
+
+              <p class="text-black">
+                "As a self-proclaimed foodie, I'm always on the hunt for hidden
+                culinary gems, and I hit the jackpot with Monara Bakery. Their
+                range of artisanal bread and decadent desserts is a
+                game-changer. I've never tasted croissants so flaky and buttery
+                or cakes so moist and flavorful. Monara Bakery has definitely
+                raised the bar for bakeries everywhere, and I can't recommend
+                them enough!"
+              </p>
+              <span class="">
+                <p class="font-bold">Michael Chan</p>
+                <p class="">Food Blogger/Foodie Dad</p>
+              </span>
+            </div>
+          </div>
+          <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
+            <span class="flex justify-center items-center max-w-[100%]">
+              <img
+                src="images/sarah.jpg"
+                alt=""
+                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+              />
+            </span>
+
+            <div
+              class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
+            >
+              <span class="">
+                <img src="images/Ic-mobile.png" alt="" class=""
+              /></span>
+
+              <p class="text-black">
+                "For years, I've been searching for a bakery that could satisfy
+                my gluten-free cravings without compromising on taste. Finally,
+                I discovered Monara Bakery, and my search is over. Their
+                gluten-free bread and pastries are a revelation! Each bite is
+                light, fluffy, and bursting with flavor. It's a dream come true
+                for anyone with dietary restrictions. Thank you, Monara Bakery,
+                for creating a safe haven for gluten-free indulgence!"
+              </p>
+              <span class="">
+                <p class="font-bold">Sarah Lin</p>
+                <p class="">Instagram Model/Influencer</p>
+              </span>
+            </div>
+          </div>
+          <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
+            <span class="flex justify-center items-center max-w-[100%]">
+              <img
+                src="images/richard.jpg"
+                alt=""
+                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+              />
+            </span>
+
+            <div
+              class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
+            >
+              <span class="">
+                <img src="images/Ic-mobile.png" alt="" class=""
+              /></span>
+
+              <p class="text-black">
+                "When it comes to innovation and creativity in baking, Monara
+                Bakery takes the cake! Their unique flavor combinations and
+                artistic presentation are simply jaw-dropping. I never thought
+                I'd be obsessed with a bakery, but Monara Bakery changed the
+                game. The s'mores cupcakes and salted caramel brownies are to
+                die for. If you're searching for a bakery that pushes the
+                boundaries of traditional desserts, look no further!"
+              </p>
+              <span class="">
+                <p class="font-bold">Richard Thompson</p>
+                <p class="">College Student/Food Lover</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-seven">
+        <div
+          id="newsletter-prompt"
+          class="flex flex-col flex-wrap justify-center items-center gap-8 text-center p-8"
+        >
+          <p class="text-2xl font-arvo">SUBSCRIBE TO OUR NEWSLETTER</p>
+          <!-- Search Button -->
+          <div
+            class="flex items-center justify-center w-[100%] max-w-[100%] bg-contain"
+          >
+            <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
+              <input
+                type="text"
+                class="px-4 py-2 w-[100%] rounded-3xl"
+                placeholder="Enter your email"
+              />
+              <div class="rounded-full bg-[#B98D38] px-4 py-1 m-1">
+                <p class="w-[100%] whitespace-nowrap">SEND EMAIL</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of button -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer-container" class="flex flex-wrap p-2 w-[100vw]">
+        <div id="footer-right" class="">
+          <div
+            id="footer-right-container"
+            class="flex flex-wrap gap-8 items-start justify-evenly m-2 w-[100vw]"
+          >
+            <div
+              id="monara-stores"
+              class="flex flex-col flex-wrap md:w-[20%] w-2/5 gap-2 justify-center md:order-1"
+            >
+              <p class="mb-2 font-bold text-md">Our Stories</p>
+              <a href="" class="hover:underline text-sm">Chicago</a>
+              <a href="" class="hover:underline text-sm">London SF</a>
+              <a href="" class="hover:underline text-sm">Cockfosters NP</a>
+              <a href="" class="hover:underline text-sm">Los Angeles</a>
+              <a href="" class="hover:underline text-sm">Paris</a>
+            </div>
+            <div
+              id="monara-resources"
+              class="flex flex-col flex-wrap w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
+            >
+              <p class="mb-2 font-bold text-md">Resources</p>
+              <a href="" class="hover:underline text-sm">Contact Us</a>
+              <a href="" class="hover:underline text-sm">Faq</a>
+              <a href="" class="hover:underline text-sm">Featured</a>
+            </div>
+            <div
+              id="monara-legal"
+              class="flex flex-col flex-wrap w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
+            >
+              <p class="mb-2 font-bold text-md">Legal</p>
+              <a href="" class="hover:underline text-sm">Privacy Policy</a>
+              <a href="" class="hover:underline text-sm">Terms Conditions</a>
+            </div>
+            <div
+              id="footer-logo-container"
+              class="flex flex-col flex-wrap w-[40%] md:w-[20%] md:-order-1 md:items-end gap-4"
+            >
+              <div
+                id="footer-logo-top"
+                class="container flex justify-evenly w-[25vw] gap-4 md:items-end md:w-[15vw]"
+              >
+                <button>
+                  <img src="images/monara-footer-logo-mobile.png" alt="" />
+                </button>
+              </div>
+              <div
+                id="footer-logo-bottom"
+                class="flex justify-evenly w-[25vw] container gap-4 md:items-end md:w-[15vw]"
+              >
+                <button>
+                  <img src="images/Fb-mobile.png" alt="" />
+                </button>
+                <button>
+                  <img src="images/Twit-mobile.png" alt="" />
+                </button>
+                <button>
+                  <img src="images/Ins-mobile.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="border border-1 border-black">
+        <p class="text-sm text-center p-6">
+          Copyright @monara 2023 All Right Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <div
+  class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+  style="background-image: url('images/chocolate-donuts.jpeg')"
+  ;
+>
+  <div class="flex flex-col container mt-36 ml-4">
+    <p class="font-arvo text-white text-2xl">Donuts</p>
+    <a href="" class="font-arvo text-white text-md">Order now →</a>
+  </div>
+</div> -->
