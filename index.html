@@ -5,23 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monara Bakery Website (Alexander's Project)</title>
-    <link rel="stylesheet" href="styles.css" text="text/css" />
-    <link rel="stylesheet" href="flickity.css" media="screen" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
     <!-- flickity link -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enter 'npm run dev' to recompile TailwindCSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Enter 'npm run dev' to recompile TailwindCSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Arvo', serif;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      .carousel-cell2 {
+        /* width: 66%;
+  height: 200px; */
+        /* enables flexbox on a flickity container */
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 100%;
+        /*  */
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+      }
+      .carousel-1 .flickity-button {
+        display: none;
+      }
+      .inter-font {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
   <body
     style="background-image: url('images/Element.jpg')"
@@ -48,11 +80,14 @@
             </div>
             <!-- hidden at mobile view -->
             <div id="header-middle" class="hidden md:block w-2/4">
-              <nav id="header-menu" class="flex justify-between g-14 flex-auto">
-                <a href="" class="hover:underline">Homes</a>
-                <a href="" class="hover:underline">Popular Menu</a>
-                <a href="" class="hover:underline">About Us</a>
-                <a href="" class="hover:underline">Testimonies</a>
+              <nav
+                id="header-menu"
+                class="flex justify-between g-14 flex-auto inter-font"
+              >
+                <a href="index.html" class="hover:underline">Home</a>
+                <a href="#section-four" class="hover:underline">Popular Menu</a>
+                <a href="#section-five" class="hover:underline">About Us</a>
+                <a href="#section-six" class="hover:underline">Testimonies</a>
               </nav>
             </div>
             <div id="header-right">
@@ -65,7 +100,7 @@
               </button>
 
               <button
-                class="hidden md:block py-3 px-7 bg-[#12303D] rounded-3xl text-[#F7DEC9]"
+                class="hidden md:block py-3 px-7 bg-[#12303D] rounded-xl text-[#F7DEC9] inter-font"
               >
                 Sign Up
               </button>
@@ -87,12 +122,14 @@
             </div>
             <div
               id="hero-text"
-              class="flex flex-col gap-4 w-[100%] md:justify-center"
+              class="flex flex-col gap-4 w-[100%] md:justify-center ml-12"
             >
-              <p class="font-arvo text-3xl max-w-[80%] md:max-w-[60%]">
+              <p
+                class="font-arvo text-2xl md:text-4xl lg:text-5xl max-w-[80%] md:max-w-[90%]"
+              >
                 SPECIAL BREAD FRESH TASTY
               </p>
-              <p class="max-w-[80%] md:max-w-[60%] text-sm">
+              <p class="max-w-[80%] md:max-w-[60%] text-sm inter-font">
                 Specially made for you with a secret recipe and love, which
                 makes every bite so delicious .
               </p>
@@ -114,14 +151,16 @@
           </div>
         </div>
       </section>
-      <section id="section-two" class="pt-4 pb-8">
+      <section id="section-two" class="pt-4 pb-8 my-8">
         <div
           class="flex flex-col items-center md:flex-row justify-between mx-4 my-4 text-center"
         >
-          <p class="font-arvo text-2xl max-w-[60%] md:max-w-[40%]">
-            AVAILABLE NOW DELICIOUS MADE BREAD HERE test
+          <p
+            class="font-arvo text-center md:text-start text-2xl max-w-[100%] md:max-w-[40%] ml-8"
+          >
+            AVAILABLE NOW DELICIOUS MADE BREAD HERE
           </p>
-          <p class="max-w-[60%] md:max-w-[30%] text-sm">
+          <p class="inter-font max-w-[100%] md:max-w-[30%] text-sm inter-font">
             Food menu choices in our shop get the best rating as the best food
           </p>
         </div>
@@ -222,7 +261,7 @@
           </div>
         </div>
       </section>
-      <section id="section-three" class="">
+      <section id="section-three" class="my-12">
         <div
           class="flex flex-col md:flex-row justify-around max-w-[100%] p-0 mt-8 ml-4 mr-4"
         >
@@ -240,7 +279,7 @@
               HANDMADE CAKES FOR YOUR EVERY TASTE
             </p>
             <p
-              class="max-w-[40%] md:max-w-[60%] min-w-[40vw] md:min-w-0 text-sm"
+              class="max-w-[40%] md:max-w-[60%] min-w-[40vw] md:min-w-0 text-sm inter-font"
             >
               “Literature is a cake with many toys baked inside and even if you
               find them all, if you don’t enjoy the path that leads you to them,
@@ -261,12 +300,15 @@
           </div>
         </div>
       </section>
-      <section id="section-four" class="max-w-[100vw] flex">
+      <section
+        id="section-four"
+        class="max-w-[100%] my-8 flex flex-col md:flex-row"
+      >
         <span
-          class="items-start relative justify-end align-center max-w-[30vw] left-0 z-10 top-0"
+          class="items-start flex flex-col justify-center items-center max-w-[50%] left-0 z-10 top-0 gap-4"
         >
           <p class="font-arvo text-2xl max-w-[80%]">POPULAR MENU</p>
-          <p class="max-w-[60%] md:max-w-[20%] text-sm">
+          <p class="max-w-[60%] text-sm inter-font">
             List of meals at the restaurant and also the price
           </p>
         </span>
@@ -275,9 +317,29 @@
         <span
           class="md:!w-[70%]"
           data-flickity='{ "groupCells": true }'
-          style="width: 100%; position: absolute; right: 0; overflow: hidden"
+          style="width: 100%; position: flex; right: 0; overflow: hidden"
         >
-          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+          >
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+          >
+            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
+            <div class="bg-white">
+              <p class="text-white">Item1</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+          >
             <img src="images/chocolate-donuts.jpeg" alt="" class="" />
             <div class="bg-white">
               <p class="text-white">Item1</p>
@@ -291,14 +353,9 @@
               <a href="">Order now</a>
             </div>
           </div>
-          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
-            </div>
-          </div>
-          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+          >
             <img src="images/chocolate-donuts.jpeg" alt="" class="" />
             <div class="bg-white">
               <p class="text-white">Item1</p>
@@ -320,7 +377,9 @@
               </p>
             </div>
 
-            <p class="text-sm text-center md:text-start max-w-[70%] mb-8">
+            <p
+              class="text-sm text-center md:text-start max-w-[70%] mb-8 inter-font"
+            >
               Order food online namely the process of ordering food through the
               website or the eating application itself. Customers can choose the
               food ordered or taken.
@@ -356,8 +415,8 @@
                 <div
                   class="text-start flex flex-col justify-center items-center md:items-start"
                 >
-                  <p class="font-bold text-sm">The Royal Moon</p>
-                  <p class="text-sm">Miracel Moon, Prancis</p>
+                  <p class="inter-font font-bold text-sm">The Royal Moon</p>
+                  <p class="inter-font text-sm">Miracel Moon, Prancis</p>
                   <hr />
                   <br />
                 </div>
@@ -375,8 +434,8 @@
                 <div
                   class="text-start flex flex-col justify-center items-center md:items-start md:mr-8"
                 >
-                  <p class="font-bold text-sm">0801-9376-003</p>
-                  <p class="text-sm">Contact Us</p>
+                  <p class="inter-font font-bold text-sm">0801-9376-003</p>
+                  <p class="inter-font text-sm">Contact Us</p>
                   <hr />
                   <br />
                 </div>
@@ -394,8 +453,8 @@
                 <div
                   class="text-start flex flex-col justify-center items-center md:items-start"
                 >
-                  <p class="font-bold text-sm">Open 08:00-21:0PM</p>
-                  <p class="text-sm">Restaurant Open Daily</p>
+                  <p class="inter-font font-bold text-sm">Open 08:00-21:0PM</p>
+                  <p class="inter-font text-sm">Restaurant Open Daily</p>
                   <hr />
                   <br />
                 </div>
@@ -404,7 +463,7 @@
           </div>
         </div>
       </section>
-      <section id="section-six" class="my-8">
+      <section id="section-six" class="my-8 inter-font">
         <div
           class="carousel-1 carousel max-w-[100%] pb-8"
           data-flickity='{ "groupCells": true }'
@@ -566,7 +625,10 @@
       </section>
     </main>
     <footer>
-      <div id="footer-container" class="flex flex-wrap p-2 w-[100vw]">
+      <div
+        id="footer-container"
+        class="flex flex-wrap p-2 w-[100vw] inter-font"
+      >
         <div id="footer-right" class="">
           <div
             id="footer-right-container"
@@ -630,7 +692,7 @@
           </div>
         </div>
       </div>
-      <div id="copyright" class="border border-1 border-black">
+      <div id="copyright" class="border border-1 border-black inter-font">
         <p class="text-sm text-center p-6">
           Copyright @monara 2023 All Right Reserved
         </p>
@@ -649,3 +711,12 @@
     <a href="" class="font-arvo text-white text-md">Order now →</a>
   </div>
 </div> -->
+
+/* external css: flickity.css */ /* .carousel-cell { width: 33%; height: 200px;
+margin-right: 10px; border-radius: 5px; counter-increment: carousel-cell; } */
+/* cell number */ /* .carousel-cell:before { display: block; text-align: center;
+content: counter(carousel-cell); line-height: 200px; font-size: 80px; color:
+white; } */ /* cell number */ /* .carousel-cell2:before { display: block;
+text-align: center; content: counter(carousel-cell); line-height: 200px;
+font-size: 80px; color: white; } */ /* .carousel-cell2.is-selected { border: 1px
+solid yellow; } */
