@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monara Bakery Website (Alexander's Project)</title>
-    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
-    <!-- flickity link -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Enter 'npm run dev' to recompile TailwindCSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -80,7 +77,7 @@
                 class="hidden md:block w-6/12"
               />
             </div>
-            <!-- hidden at mobile view -->
+
             <div id="header-middle" class="hidden md:block w-2/4">
               <nav
                 id="header-menu"
@@ -166,7 +163,7 @@
             Food menu choices in our shop get the best rating as the best food
           </p>
         </div>
-        <!-- column-reverse? -->
+
         <div
           class="carousel-1 carousel max-w-[100%] my-8"
           data-flickity='{ "groupCells": true }'
@@ -317,7 +314,6 @@
           </p>
         </span>
 
-        <!-- position: absolute; overflow: hidden; right: 0; width: 300px; -->
         <span
           class="my-8 carousel-1"
           data-flickity='{ "groupCells": true }'
@@ -434,13 +430,11 @@
             id="monara-image-container"
             class="flex justify-center mt-4 md:w-[30vw] md:max-w-[30vw]"
           >
-            <!-- border-radius -->
             <img
               src="images/baker-delivery.png"
               class="max-w-[60vw] md:max-w-[25vw] mb-5"
               alt=""
             />
-            <!-- 25% -->
             <div class=""></div>
           </div>
 
@@ -658,7 +652,6 @@
           class="flex flex-col flex-wrap justify-center items-center gap-8 text-center p-8 my-12"
         >
           <p class="text-2xl font-arvo">SUBSCRIBE TO OUR NEWSLETTER</p>
-          <!-- Search Button -->
           <div
             class="flex items-center justify-center w-[100%] max-w-[100%] bg-contain"
           >
@@ -673,7 +666,6 @@
               </div>
             </div>
           </div>
-          <!-- end of button -->
         </div>
       </section>
     </main>
@@ -785,98 +777,3 @@
     </footer>
   </body>
 </html>
-
-<!-- <div
-  class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
-  style="background-image: url('images/chocolate-donuts.jpeg')"
-  ;
->
-  <div class="flex flex-col container mt-36 ml-4">
-    <p class="font-arvo text-white text-2xl">Donuts</p>
-    <a href="" class="font-arvo text-white text-md">Order now →</a>
-  </div>
-</div> -->
-
-<!-- /* external css: flickity.css */ /* .carousel-cell { width: 33%; height: 200px;
-margin-right: 10px; border-radius: 5px; counter-increment: carousel-cell; } */
-/* cell number */ /* .carousel-cell:before { display: block; text-align: center;
-content: counter(carousel-cell); line-height: 200px; font-size: 80px; color:
-white; } */ /* cell number */ /* .carousel-cell2:before { display: block;
-text-align: center; content: counter(carousel-cell); line-height: 200px;
-font-size: 80px; color: white; } */ /* .carousel-cell2.is-selected { border: 1px
-solid yellow; } */ -->
-
-<!-- <footer>
-      <div
-        id="footer-container"
-        class="flex flex-wrap p-2 w-[100vw] inter-font mt-8"
-      >
-        <div id="footer-right" class="border-b border-black pb-8">
-          <div
-            id="footer-right-container"
-            class="flex flex-wrap gap-8 items-start justify-evenly m-2 w-[100vw]"
-          >
-            <div
-              id="monara-stores"
-              class="flex flex-col flex-wrap md:w-[20%] w-2/5 gap-2 justify-center md:order-1"
-            >
-              <p class="mb-2 font-bold text-md">Our Stories</p>
-              <a href="" class="hover:underline text-sm">Chicago</a>
-              <a href="" class="hover:underline text-sm">London SF</a>
-              <a href="" class="hover:underline text-sm">Cockfosters NP</a>
-              <a href="" class="hover:underline text-sm">Los Angeles</a>
-              <a href="" class="hover:underline text-sm">Paris</a>
-            </div>
-            <div
-              id="monara-resources"
-              class="flex flex-col flex-wrap w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
-            >
-              <p class="mb-2 font-bold text-md">Resources</p>
-              <a href="" class="hover:underline text-sm">Contact Us</a>
-              <a href="" class="hover:underline text-sm">Faq</a>
-              <a href="" class="hover:underline text-sm">Featured</a>
-            </div>
-            <div
-              id="monara-legal"
-              class="flex flex-col flex-wrap w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
-            >
-              <p class="mb-2 font-bold text-md">Legal</p>
-              <a href="" class="hover:underline text-sm">Privacy Policy</a>
-              <a href="" class="hover:underline text-sm">Terms Conditions</a>
-            </div>
-            <div
-              id="footer-logo-container"
-              class="flex flex-col flex-wrap w-[40%] md:w-[20%] md:-order-1 md:items-end gap-4"
-            >
-              <div
-                id="footer-logo-top"
-                class="container flex justify-evenly w-[25vw] gap-4 md:items-end md:w-[15vw]"
-              >
-                <button>
-                  <img src="images/monara-footer-logo-mobile.png" alt="" />
-                </button>
-              </div>
-              <div
-                id="footer-logo-bottom"
-                class="flex justify-evenly w-[25vw] container gap-4 md:items-end md:w-[15vw]"
-              >
-                <button>
-                  <img src="images/Fb-mobile.png" alt="" />
-                </button>
-                <button>
-                  <img src="images/Twit-mobile.png" alt="" />
-                </button>
-                <button>
-                  <img src="images/Ins-mobile.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="copyright" class="inter-font">
-        <p class="text-sm text-center p-6">
-          Copyright @monara 2023 All Right Reserved
-        </p>
-      </div>
-    </footer> -->
