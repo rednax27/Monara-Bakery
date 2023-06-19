@@ -33,19 +33,21 @@
       img {
         max-width: 100%;
       }
+      #section-six img {
+        border-radius: 15px;
+        border: 1px solid white;
+      }
+      .no-border-radius {
+        border-radius: 0;
+      }
       .carousel-cell2 {
-        /* width: 66%;
-  height: 200px; */
-        /* enables flexbox on a flickity container */
         flex: 0 0 50%;
         max-width: 50%;
         width: 100%;
-        /*  */
-        margin-right: 10px;
-        border-radius: 5px;
+        margin-right: 2rem;
+        border-radius: 15px;
         counter-increment: carousel-cell;
         background-repeat: no-repeat;
-        border: 1px solid black;
       }
       .carousel-1 .flickity-button {
         display: none;
@@ -166,11 +168,11 @@
         </div>
         <!-- column-reverse? -->
         <div
-          class="carousel-1 carousel max-w-[100%] mt-8"
+          class="carousel-1 carousel max-w-[100%] my-8"
           data-flickity='{ "groupCells": true }'
         >
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/chocolate-donuts.jpeg')"
             ;
           >
@@ -180,7 +182,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/croissant.jpg')"
             ;
           >
@@ -190,7 +192,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/macarons.jpg')"
             ;
           >
@@ -200,7 +202,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/cinnamoroll.jpg')"
             ;
           >
@@ -210,7 +212,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/monara-apple-pie.jpg')"
             ;
           >
@@ -220,7 +222,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/wheat-bread.jpg')"
             ;
           >
@@ -230,7 +232,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/monara-pizza.jpg')"
             ;
           >
@@ -240,7 +242,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/monara-fruit-cake.jpg')"
             ;
           >
@@ -250,7 +252,7 @@
             </div>
           </div>
           <div
-            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+            class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[30%]"
             style="background-image: url('images/bagel.jpg')"
             ;
           >
@@ -261,7 +263,7 @@
           </div>
         </div>
       </section>
-      <section id="section-three" class="my-12">
+      <section id="section-three" class="my-12 my-8">
         <div
           class="flex flex-col md:flex-row justify-around max-w-[100%] p-0 mt-8 ml-4 mr-4"
         >
@@ -286,7 +288,7 @@
               it will be a hollow accomplishment” -Cam’ron
             </p>
             <div
-              class="flex items-center justify-center w-[100%] max-w-[100%] bg-contain"
+              class="flex items-center justify-center w-[60%] max-w-[100%] lg:ml-[-6.5rem]"
             >
               <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
                 <input
@@ -307,7 +309,9 @@
         <span
           class="items-start flex flex-col justify-center items-center max-w-[50%] left-0 z-10 top-0 gap-4"
         >
-          <p class="font-arvo text-2xl max-w-[80%]">POPULAR MENU</p>
+          <p class="font-arvo text-2xl max-w-[80%] mr-[-1rem] md:mr-[-3rem]">
+            POPULAR MENU
+          </p>
           <p class="max-w-[60%] text-sm inter-font">
             List of meals at the restaurant and also the price
           </p>
@@ -315,56 +319,97 @@
 
         <!-- position: absolute; overflow: hidden; right: 0; width: 300px; -->
         <span
-          class="md:!w-[70%]"
+          class="my-8 carousel-1"
           data-flickity='{ "groupCells": true }'
           style="width: 100%; position: flex; right: 0; overflow: hidden"
         >
           <div
-            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
           >
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
+            <img src="images/croissant.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/5-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Croissant</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
             </div>
           </div>
           <div
-            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
           >
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
+            <img src="images/monara-apple-pie.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/4-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Monara Apple Pie</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
             </div>
           </div>
           <div
-            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
           >
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
-            </div>
-          </div>
-          <div class="flex flex-col max-w-[100%] w-[66%] md:w-[30%]">
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
+            <img src="images/cinnamoroll.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/5-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Cinnamon Roll</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
             </div>
           </div>
           <div
-            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[30%]"
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
           >
-            <img src="images/chocolate-donuts.jpeg" alt="" class="" />
-            <div class="bg-white">
-              <p class="text-white">Item1</p>
-              <a href="">Order now</a>
+            <img src="images/bagel.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/5-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Bagel</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
+          >
+            <img src="images/macarons.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/4-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Macarons</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
+            </div>
+          </div>
+          <div
+            class="carousel-cell2 flex flex-col max-w-[100%] w-[66%] md:w-[40%]"
+          >
+            <img src="images/wheat-bread.jpg" alt="" class="h-[40%]" />
+            <div class="bg-white h-26 p-2">
+              <img src="images/5-star.png" alt="" class="my-1 ml-1" />
+              <p class="text-xl ml-1">Wheat Bread</p>
+              <button
+                class="border border-black p-1 rounded-xl my-1 ml-1 bg-[#B98D38] px-2"
+              >
+                <a href="" class="text-white text-sm">BUY</a>
+              </button>
             </div>
           </div>
         </span>
       </section>
-      <section id="section-five" class="">
+      <section id="section-five" class="my-8">
         <div
           class="flex flex-col md:flex-row md:justify-evenly md:items-center mt-12"
         >
@@ -474,11 +519,13 @@
           "
         >
           <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
-            <span class="flex justify-center items-center max-w-[100%]">
+            <span
+              class="flex justify-center items-center max-w-[100%] pl-12 md:pl-24"
+            >
               <img
                 src="images/larissa.jpg"
                 alt=""
-                class="max-w-[100%] max-h-[50vh] pl-2 sm:pl-12 md:pl-24"
+                class="max-w-[100%] max-h-[50vh] pl-2 sm:mr-8 mr-0"
               />
             </span>
 
@@ -486,7 +533,7 @@
               class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-12 md:ml-24"
             >
               <span class="">
-                <img src="images/Ic-mobile.png" alt="" class=""
+                <img src="images/Ic-mobile.png" alt="" class="!rounded-none"
               /></span>
 
               <p class="text-black">
@@ -505,11 +552,13 @@
             </div>
           </div>
           <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
-            <span class="flex justify-center items-center max-w-[100%]">
+            <span
+              class="flex justify-center items-center max-w-[100%] pl-12 md:pl-24"
+            >
               <img
                 src="images/michael.jpg"
                 alt=""
-                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+                class="max-w-[100%] max-h-[50vh] sm:mr-16 mr-0"
               />
             </span>
 
@@ -517,7 +566,7 @@
               class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
             >
               <span class="">
-                <img src="images/Ic-mobile.png" alt="" class=""
+                <img src="images/Ic-mobile.png" alt="" class="!rounded-none"
               /></span>
 
               <p class="text-black">
@@ -536,11 +585,13 @@
             </div>
           </div>
           <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
-            <span class="flex justify-center items-center max-w-[100%]">
+            <span
+              class="flex justify-center items-center max-w-[100%] pl-12 md:pl-24"
+            >
               <img
                 src="images/sarah.jpg"
                 alt=""
-                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+                class="max-w-[100%] max-h-[50vh] sm:mr-8 md:mr-0"
               />
             </span>
 
@@ -548,7 +599,7 @@
               class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
             >
               <span class="">
-                <img src="images/Ic-mobile.png" alt="" class=""
+                <img src="images/Ic-mobile.png" alt="" class="!rounded-none"
               /></span>
 
               <p class="text-black">
@@ -567,11 +618,13 @@
             </div>
           </div>
           <div class="w-[100%] flex flex-col md:flex-row justify-evenly gap-4">
-            <span class="flex justify-center items-center max-w-[100%]">
+            <span
+              class="flex justify-center items-center max-w-[100%] pl-12 md:pl-24"
+            >
               <img
                 src="images/richard.jpg"
                 alt=""
-                class="max-w-[100%] max-h-[50vh] pl-12 md:pl-24"
+                class="max-w-[100%] max-h-[50vh] sm:mr-8 mr-0"
               />
             </span>
 
@@ -579,7 +632,7 @@
               class="flex flex-col container justify-start gap-8 p-14 max-w-[80%] md:max-w-[50%] ml-24"
             >
               <span class="">
-                <img src="images/Ic-mobile.png" alt="" class=""
+                <img src="images/Ic-mobile.png" alt="" class="!rounded-none"
               /></span>
 
               <p class="text-black">
@@ -602,7 +655,7 @@
       <section id="section-seven">
         <div
           id="newsletter-prompt"
-          class="flex flex-col flex-wrap justify-center items-center gap-8 text-center p-8"
+          class="flex flex-col flex-wrap justify-center items-center gap-8 text-center p-8 my-12"
         >
           <p class="text-2xl font-arvo">SUBSCRIBE TO OUR NEWSLETTER</p>
           <!-- Search Button -->
@@ -627,9 +680,138 @@
     <footer>
       <div
         id="footer-container"
-        class="flex flex-wrap p-2 w-[100vw] inter-font"
+        class="flex flex-wrap justify-center p-2 w-[100vw] inter-font mt-8"
       >
-        <div id="footer-right" class="">
+        <div id="footer-right" class="border-b border-black pb-8">
+          <div
+            id="footer-right-container"
+            class="flex flex-wrap gap-8 items-start justify-evenly m-2 w-[100vw]"
+          >
+            <div
+              class="flex flex-wrap gap-8 items-start justify-evenly m-2 w-[100%] md:w-[60%] ml-8"
+            >
+              <div
+                id="monara-stores"
+                class="flex flex-col flex-wrap md:w-[20%] w-2/5 gap-2 justify-center md:order-1"
+              >
+                <p class="mb-2 font-bold text-md">Our Stories</p>
+                <a href="" class="hover:underline text-sm">Chicago</a>
+                <a href="" class="hover:underline text-sm">London SF</a>
+                <a href="" class="hover:underline text-sm">Cockfosters NP</a>
+                <a href="" class="hover:underline text-sm">Los Angeles</a>
+                <a href="" class="hover:underline text-sm">Paris</a>
+              </div>
+              <div
+                id="monara-resources"
+                class="flex flex-col flex-wrap w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
+              >
+                <p class="mb-2 font-bold text-md">Resources</p>
+                <a href="" class="hover:underline text-sm">Contact Us</a>
+                <a href="" class="hover:underline text-sm">Faq</a>
+                <a href="" class="hover:underline text-sm">Featured</a>
+              </div>
+              <div
+                id="monara-legal"
+                class="flex flex-col w-2/5 md:w-[20%] gap-2 justify-center md:order-1"
+              >
+                <p class="mb-2 font-bold text-md">Legal</p>
+                <a href="" class="hover:underline text-sm">Privacy Policy</a>
+                <a href="" class="hover:underline text-sm">Terms Conditions</a>
+              </div>
+              <div
+                id="footer-logo-container"
+                class="flex flex-col flex-wrap w-[40%] md:w-[20%] md:-order-1 md:items-end gap-4 md:hidden mt-[-3rem]"
+              >
+                <div
+                  id="footer-logo-top"
+                  class="container flex justify-evenly w-[25vw] gap-4 md:items-end md:w-[15vw]"
+                >
+                  <button>
+                    <img src="images/monara-footer-logo-mobile.png" alt="" />
+                  </button>
+                </div>
+                <div
+                  id="footer-logo-bottom"
+                  class="flex justify-evenly w-[25vw] container gap-4 md:items-end md:w-[15vw]"
+                >
+                  <button>
+                    <img src="images/Fb-mobile.png" alt="" />
+                  </button>
+                  <button>
+                    <img src="images/Twit-mobile.png" alt="" />
+                  </button>
+                  <button>
+                    <img src="images/Ins-mobile.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="footer-logo-container"
+              class="flex flex-col flex-wrap w-[40%] md:w-[20%] md:-order-1 md:items-end gap-4 hidden md:flex"
+            >
+              <div
+                id="footer-logo-top"
+                class="container flex justify-evenly w-[25vw] gap-4 md:items-end md:w-[15vw]"
+              >
+                <button>
+                  <img src="images/monara-footer-logo-mobile.png" alt="" />
+                </button>
+              </div>
+              <div
+                id="footer-logo-bottom"
+                class="flex justify-evenly w-[25vw] container gap-4 md:items-end md:w-[15vw]"
+              >
+                <button>
+                  <img src="images/Fb-mobile.png" alt="" />
+                </button>
+                <button>
+                  <img src="images/Twit-mobile.png" alt="" />
+                </button>
+                <button>
+                  <img src="images/Ins-mobile.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyright" class="inter-font flex">
+          <p class="flex text-sm p-6 self-center">
+            Copyright @monara 2023 All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <div
+  class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
+  style="background-image: url('images/chocolate-donuts.jpeg')"
+  ;
+>
+  <div class="flex flex-col container mt-36 ml-4">
+    <p class="font-arvo text-white text-2xl">Donuts</p>
+    <a href="" class="font-arvo text-white text-md">Order now →</a>
+  </div>
+</div> -->
+
+<!-- /* external css: flickity.css */ /* .carousel-cell { width: 33%; height: 200px;
+margin-right: 10px; border-radius: 5px; counter-increment: carousel-cell; } */
+/* cell number */ /* .carousel-cell:before { display: block; text-align: center;
+content: counter(carousel-cell); line-height: 200px; font-size: 80px; color:
+white; } */ /* cell number */ /* .carousel-cell2:before { display: block;
+text-align: center; content: counter(carousel-cell); line-height: 200px;
+font-size: 80px; color: white; } */ /* .carousel-cell2.is-selected { border: 1px
+solid yellow; } */ -->
+
+<!-- <footer>
+      <div
+        id="footer-container"
+        class="flex flex-wrap p-2 w-[100vw] inter-font mt-8"
+      >
+        <div id="footer-right" class="border-b border-black pb-8">
           <div
             id="footer-right-container"
             class="flex flex-wrap gap-8 items-start justify-evenly m-2 w-[100vw]"
@@ -692,31 +874,9 @@
           </div>
         </div>
       </div>
-      <div id="copyright" class="border border-1 border-black inter-font">
+      <div id="copyright" class="inter-font">
         <p class="text-sm text-center p-6">
           Copyright @monara 2023 All Right Reserved
         </p>
       </div>
-    </footer>
-  </body>
-</html>
-
-<!-- <div
-  class="carousel-cell2 bg-cover bg-center max-w-[100%] w-[80%] md:w-[32%]"
-  style="background-image: url('images/chocolate-donuts.jpeg')"
-  ;
->
-  <div class="flex flex-col container mt-36 ml-4">
-    <p class="font-arvo text-white text-2xl">Donuts</p>
-    <a href="" class="font-arvo text-white text-md">Order now →</a>
-  </div>
-</div> -->
-
-/* external css: flickity.css */ /* .carousel-cell { width: 33%; height: 200px;
-margin-right: 10px; border-radius: 5px; counter-increment: carousel-cell; } */
-/* cell number */ /* .carousel-cell:before { display: block; text-align: center;
-content: counter(carousel-cell); line-height: 200px; font-size: 80px; color:
-white; } */ /* cell number */ /* .carousel-cell2:before { display: block;
-text-align: center; content: counter(carousel-cell); line-height: 200px;
-font-size: 80px; color: white; } */ /* .carousel-cell2.is-selected { border: 1px
-solid yellow; } */
+    </footer> -->
