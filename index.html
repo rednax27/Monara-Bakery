@@ -7,6 +7,7 @@
     <title>Monara Bakery Website (Alexander's Project)</title>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="hamburger.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -74,7 +75,7 @@
               <img
                 src="images/monara-logo-md.png"
                 alt="Monara Bakery Logo"
-                class="hidden md:block w-6/12"
+                class="hidden md:block w-[70%]"
               />
             </div>
 
@@ -105,46 +106,44 @@
               </button>
             </div>
           </div>
+        </div>
+        <div
+          id="hero-1"
+          class="flex flex-col md:flex-row-reverse md:justify-between gap-4 justify-evenly p-2 ml-2 mx-12"
+        >
+          <div id="hero-image-container" class="w-[60%]">
+            <img
+              src="images/gourmet-chocolate-cupcake-left.png"
+              class="md:max-w-[40vw] md:hidden inline-flex alt="
+            />
+            <img
+              src="images/gourmet-chocolate-cupcake-right.png"
+              class="md:max-w-[40vw] hidden md:inline-flex alt="
+            />
+          </div>
           <div
-            id="hero-1"
-            class="flex flex-col md:flex-row-reverse md:justify-between gap-4 justify-evenly p-2 ml-2 mx-12"
+            id="hero-text"
+            class="flex flex-col gap-4 w-[100%] md:justify-center ml-12"
           >
-            <div id="hero-image-container" class="w-[60%]">
-              <img
-                src="images/gourmet-chocolate-cupcake-left.png"
-                class="md:max-w-[40vw] md:hidden inline-flex alt="
-              />
-              <img
-                src="images/gourmet-chocolate-cupcake-right.png"
-                class="md:max-w-[40vw] hidden md:inline-flex alt="
-              />
-            </div>
-            <div
-              id="hero-text"
-              class="flex flex-col gap-4 w-[100%] md:justify-center ml-12"
+            <p
+              class="font-arvo text-2xl md:text-4xl lg:text-5xl max-w-[80%] md:max-w-[90%]"
             >
-              <p
-                class="font-arvo text-2xl md:text-4xl lg:text-5xl max-w-[80%] md:max-w-[90%]"
-              >
-                SPECIAL BREAD FRESH TASTY
-              </p>
-              <p class="max-w-[80%] md:max-w-[60%] text-sm inter-font">
-                Specially made for you with a secret recipe and love, which
-                makes every bite so delicious .
-              </p>
-              <div
-                class="flex items-center justify-start w-[100%] max-w-[100%] bg-contain"
-              >
-                <div
-                  class="flex border-2 rounded-3xl border-[#B98D38] bg-white"
-                >
-                  <input
-                    type="text"
-                    class="px-4 py-2 w-[100%] rounded-3xl"
-                    placeholder="Search..."
-                  />
-                  <div class="rounded-full bg-[#B98D38] px-3 py-2 m-1">→</div>
-                </div>
+              SPECIAL BREAD FRESH TASTY
+            </p>
+            <p class="max-w-[80%] md:max-w-[60%] text-sm inter-font">
+              Specially made for you with a secret recipe and love, which makes
+              every bite so delicious .
+            </p>
+            <div
+              class="flex items-center justify-start w-[100%] max-w-[100%] bg-contain"
+            >
+              <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
+                <input
+                  type="text"
+                  class="px-4 py-2 w-[100%] rounded-3xl inter-font"
+                  placeholder="Find your fave cookies"
+                />
+                <div class="rounded-full bg-[#B98D38] px-3 py-2 m-1">→</div>
               </div>
             </div>
           </div>
@@ -155,11 +154,13 @@
           class="flex flex-col items-center md:flex-row justify-between mx-4 my-4 text-center"
         >
           <p
-            class="font-arvo text-center md:text-start text-2xl max-w-[100%] md:max-w-[40%] ml-8"
+            class="font-arvo text-center md:text-start text-2xl max-w-[100%] md:max-w-[50%] ml-8"
           >
             AVAILABLE NOW DELICIOUS MADE BREAD HERE
           </p>
-          <p class="inter-font max-w-[100%] md:max-w-[30%] text-sm inter-font">
+          <p
+            class="inter-font max-w-[60%] md:max-w-[30%] text-sm inter-font ml-8 md:ml-0"
+          >
             Food menu choices in our shop get the best rating as the best food
           </p>
         </div>
@@ -290,8 +291,8 @@
               <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
                 <input
                   type="text"
-                  class="px-4 py-2 w-[100%] rounded-3xl"
-                  placeholder="Search..."
+                  class="px-4 py-2 w-[100%] rounded-3xl inter-font"
+                  placeholder="Find your fave cookies"
                 />
                 <div class="rounded-full bg-[#B98D38] px-3 py-2 m-1">→</div>
               </div>
@@ -658,7 +659,7 @@
             <div class="flex border-2 rounded-3xl border-[#B98D38] bg-white">
               <input
                 type="text"
-                class="px-4 py-2 w-[100%] rounded-3xl"
+                class="px-4 py-2 w-[100%] rounded-3xl inter-font"
                 placeholder="Enter your email"
               />
               <div class="rounded-full bg-[#B98D38] px-4 py-1 m-1">
